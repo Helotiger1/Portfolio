@@ -1,73 +1,30 @@
-# React + TypeScript + Vite
+# Portafolio de Desarrollador Full Stack - Anghelo Aguilera
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenido al repositorio del portafolio personal de **Anghelo Aguilera**, un Desarrollador Full Stack con enfoque en la creación de soluciones robustas y visualmente atractivas.
 
-Currently, two official plugins are available:
+Este proyecto ha sido diseñado para demostrar habilidades en el desarrollo moderno de interfaces de usuario y un manejo avanzado de estilos con Tailwind CSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Características y Stack Tecnológico
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Este portafolio es una SPA (Single Page Application) construida con tecnologías de vanguardia para asegurar alto rendimiento y una experiencia de usuario fluida.
 
-## Expanding the ESLint configuration
+| Tecnología | Descripción |
+| :--- | :--- |
+| **Frontend** | **React** (Componentes Funcionales) y **TypeScript** |
+| **Estilos** | **Tailwind CSS** (Clases utilitarias) |
+| **Diseño** | Implementación de estilos **Neumorfismo Suave** y **Vidrio Esmerilado (Glassmorphism)**. |
+| **Despliegue** | Vercel (CI/CD automático) |
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Diseño y Estilo
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+El proyecto se enfoca en la estética profesional y moderna, utilizando una paleta de colores basada en tonos **Índigo** y **Gris** para lograr un contraste limpio y elegante.
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+* **Header Dinámico:** Implementación de `backdrop-blur` para crear un efecto de **Glassmorphism** que mejora la profundidad visual.
+* **Tarjetas con Interacción:** Los componentes de proyecto (`ProjectCard`) utilizan transiciones (`transition-all`) y transformaciones (`hover:-translate-y-2`) para simular un efecto 3D al interactuar.
+* **Diseño de Línea de Tiempo:** La sección de Educación utiliza un diseño basado en bordes y puntos para simular una línea de tiempo cronológica.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
